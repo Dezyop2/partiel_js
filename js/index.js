@@ -84,9 +84,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     window.supprimerRecette = function(cleRecette) {
-        localStorage.removeItem(cleRecette);
+        if (recettesEnCours[cleRecette]) {
+            delete recettesEnCours[cleRecette];
 
-        delete recettesEnCours[cleRecette];
+            afficherRecettesEnCours();
+        }
+
+        localStorage.removeItem(cleRecette);
 
         afficherToutesRecettes();
     };

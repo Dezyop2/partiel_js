@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Partiel JavaScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    
+    <div class="boutons">
+        <button type="button" class="btn-ajout btn btn-primary" id="ajouterRecette">Ajouter une recette</button>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="nomRecette" placeholder="Nom de la recette">
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" id="ingredients" placeholder="Liste des ingrédients"></textarea>
+        </div>
+
+        <div class="badge bg-info text-wrap text-white" style="width: 12rem; font-size: 1.5rem; margin-left: 20px;">
+            Voir les recettes
+        </div>        
+        <div class="mt-4" id="listeRecettes"></div>
+
+        <div class="badge bg-info text-wrap text-white" style="width: 12rem; font-size: 1.5rem; margin-left: 20px;">
+            En préparation
+        </div>  
+        <div class="mt-4" id="recetteSelectionnee"></div>
+
+        <div class="mt-4" id="validerCommandeContainer"></div>
+    </div>
+
+    <script src="js/index.js"></script>
 </body>
 </html>

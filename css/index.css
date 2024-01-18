@@ -1,0 +1,18 @@
+.boutons {
+    align-items: center;
+}
+
+.btn-ajout {
+    display: block;
+    width: 25%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.form-floating {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
